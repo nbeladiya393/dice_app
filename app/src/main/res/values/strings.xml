@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">dice_app</string>
+    <string name="number_is_5">Number is : 5</string>
+</resources>
