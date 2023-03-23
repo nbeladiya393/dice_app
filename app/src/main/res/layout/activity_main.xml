@@ -4,28 +4,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/number_is_5"
-        android:textSize="25dp" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardUseCompatPadding="true"
-        android:layout_marginTop="30dp"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="5dp"
-        app:cardBackgroundColor="#fff"/>
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:src="@drawable/dice1"/>
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number is : 5"
+            android:textSize="20dp"
+
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="0.1"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardrolldice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#fff">
+
+            <ImageView
+                android:id="@+id/imgdice"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dice1"
+                android:layout_margin="15dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <Button
+            android:id="@+id/btnroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll Again"
+            android:layout_margin="8dp"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtnumber1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number is : 5"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_weight="0.1"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardrolldice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:cardBackgroundColor="#fff">
+
+            <ImageView
+                android:id="@+id/imgDice"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dice1"
+                android:layout_margin="15dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnroll1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Roll Again"
+            android:layout_margin="8dp"/>
+
+
+    </LinearLayout>
+
+
+
 
 
 
